@@ -37,7 +37,7 @@ namespace PDTS.Data_Access_Layer
         {
             try
             {
-                var tripVar = new trip
+                var tripsVar = new trip
                 {
                     route_id = routeId,
                     service_id = serviceId,
@@ -45,7 +45,7 @@ namespace PDTS.Data_Access_Layer
                     direction_id = directionId,
                     shape_id = shapeId
                 };
-                var newTrip = TripsRepository.Create(tripVar);
+                var newTrip = TripsRepository.Create(tripsVar);
                 TripsRepository.SaveChanges();
                 return newTrip.trip_id;
             }
