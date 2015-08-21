@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="publicTransportDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="agency">
+          <Key>
+            <PropertyRef Name="agency_id" />
+          </Key>
+          <Property Name="agency_id" Type="int" Nullable="false" />
+          <Property Name="agency_url" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="agency_timezone" Type="varchar" MaxLength="255" />
+          <Property Name="agency_lang" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="calendar">
+          <Key>
+            <PropertyRef Name="service_id" />
+          </Key>
+          <Property Name="service_id" Type="int" Nullable="false" />
+          <Property Name="sunday" Type="bit" Nullable="false" />
+          <Property Name="monday" Type="bit" Nullable="false" />
+          <Property Name="tuesday" Type="bit" Nullable="false" />
+          <Property Name="wednesday" Type="bit" Nullable="false" />
+          <Property Name="thrusday" Type="bit" Nullable="false" />
+          <Property Name="friday" Type="bit" Nullable="false" />
+          <Property Name="saturday" Type="bit" Nullable="false" />
+          <Property Name="starting_date" Type="date" Nullable="false" />
+          <Property Name="end_date" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="routesInfo">
+          <Key>
+            <PropertyRef Name="route_id" />
+          </Key>
+          <Property Name="route_id" Type="int" Nullable="false" />
+          <Property Name="agency_id" Type="int" Nullable="false" />
+          <Property Name="route_short_name" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="route_long_name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="route_desc" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="route_type" Type="int" Nullable="false" />
+          <Property Name="route_color" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="shapes">
+          <Key>
+            <PropertyRef Name="shape_id" />
+          </Key>
+          <Property Name="shape_id" Type="int" Nullable="false" />
+          <Property Name="shape_pt_lat" Type="float" Nullable="false" />
+          <Property Name="shape_pt_lon" Type="float" Nullable="false" />
+          <Property Name="shape_pt_sequence" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stop_times">
+          <Key>
+            <PropertyRef Name="trip_id" />
+            <PropertyRef Name="arrival_time" />
+          </Key>
+          <Property Name="trip_id" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="arrival_time" Type="time" Precision="7" Nullable="false" />
+          <Property Name="departure_time" Type="time" Precision="7" Nullable="false" />
+          <Property Name="stop_id" Type="int" Nullable="false" />
+          <Property Name="stop_sequence" Type="int" Nullable="false" />
+          <Property Name="pickup_type" Type="int" Nullable="false" />
+          <Property Name="drop_off_type" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stops">
+          <Key>
+            <PropertyRef Name="stop_id" />
+          </Key>
+          <Property Name="stop_id" Type="int" Nullable="false" />
+          <Property Name="stop_code" Type="int" Nullable="false" />
+          <Property Name="stop_name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="stop_desc" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="translations">
+          <Key>
+            <PropertyRef Name="trans_id" />
+          </Key>
+          <Property Name="trans_id" Type="int" Nullable="false" />
+          <Property Name="lang" Type="bit" Nullable="false" />
+          <Property Name="translation" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="trips">
+          <Key>
+            <PropertyRef Name="trip_id" />
+          </Key>
+          <Property Name="route_id" Type="int" Nullable="false" />
+          <Property Name="service_id" Type="int" Nullable="false" />
+          <Property Name="trip_id" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="direction_id" Type="int" Nullable="false" />
+          <Property Name="shape_id" Type="int" />
+        </EntityType>
+        <Association Name="FK__routesInf__agenc__2F10007B">
+          <End Role="agency" Type="Self.agency" Multiplicity="1" />
+          <End Role="routesInfo" Type="Self.routesInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="agency">
+              <PropertyRef Name="agency_id" />
+            </Principal>
+            <Dependent Role="routesInfo">
+              <PropertyRef Name="agency_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stop_time__stop___59FA5E80">
+          <End Role="stops" Type="Self.stops" Multiplicity="1" />
+          <End Role="stop_times" Type="Self.stop_times" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="stops">
+              <PropertyRef Name="stop_id" />
+            </Principal>
+            <Dependent Role="stop_times">
+              <PropertyRef Name="stop_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stop_time__trip___59063A47">
+          <End Role="trips" Type="Self.trips" Multiplicity="1" />
+          <End Role="stop_times" Type="Self.stop_times" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="trips">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="stop_times">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips__route_id__5535A963">
+          <End Role="routesInfo" Type="Self.routesInfo" Multiplicity="1" />
+          <End Role="trips" Type="Self.trips" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="routesInfo">
+              <PropertyRef Name="route_id" />
+            </Principal>
+            <Dependent Role="trips">
+              <PropertyRef Name="route_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips__service_i__5629CD9C">
+          <End Role="calendar" Type="Self.calendar" Multiplicity="1" />
+          <End Role="trips" Type="Self.trips" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="calendar">
+              <PropertyRef Name="service_id" />
+            </Principal>
+            <Dependent Role="trips">
+              <PropertyRef Name="service_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips__shape_id__571DF1D5">
+          <End Role="shapes" Type="Self.shapes" Multiplicity="0..1" />
+          <End Role="trips" Type="Self.trips" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shapes">
+              <PropertyRef Name="shape_id" />
+            </Principal>
+            <Dependent Role="trips">
+              <PropertyRef Name="shape_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="publicTransportDataModelStoreContainer">
+          <EntitySet Name="agency" EntityType="Self.agency" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="calendar" EntityType="Self.calendar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="routesInfo" EntityType="Self.routesInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="shapes" EntityType="Self.shapes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stop_times" EntityType="Self.stop_times" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stops" EntityType="Self.stops" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="translations" EntityType="Self.translations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="trips" EntityType="Self.trips" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__routesInf__agenc__2F10007B" Association="Self.FK__routesInf__agenc__2F10007B">
+            <End Role="agency" EntitySet="agency" />
+            <End Role="routesInfo" EntitySet="routesInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stop_time__stop___59FA5E80" Association="Self.FK__stop_time__stop___59FA5E80">
+            <End Role="stops" EntitySet="stops" />
+            <End Role="stop_times" EntitySet="stop_times" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stop_time__trip___59063A47" Association="Self.FK__stop_time__trip___59063A47">
+            <End Role="trips" EntitySet="trips" />
+            <End Role="stop_times" EntitySet="stop_times" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips__route_id__5535A963" Association="Self.FK__trips__route_id__5535A963">
+            <End Role="routesInfo" EntitySet="routesInfo" />
+            <End Role="trips" EntitySet="trips" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips__service_i__5629CD9C" Association="Self.FK__trips__service_i__5629CD9C">
+            <End Role="calendar" EntitySet="calendar" />
+            <End Role="trips" EntitySet="trips" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips__shape_id__571DF1D5" Association="Self.FK__trips__shape_id__571DF1D5">
+            <End Role="shapes" EntitySet="shapes" />
+            <End Role="trips" EntitySet="trips" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="publicTransportDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="agency">
+          <Key>
+            <PropertyRef Name="agency_id" />
+          </Key>
+          <Property Name="agency_id" Type="Int32" Nullable="false" />
+          <Property Name="agency_url" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="agency_timezone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="agency_lang" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="routesInfoes" Relationship="Self.FK__routesInf__agenc__2F10007B" FromRole="agency" ToRole="routesInfo" />
+        </EntityType>
+        <EntityType Name="calendar">
+          <Key>
+            <PropertyRef Name="service_id" />
+          </Key>
+          <Property Name="service_id" Type="Int32" Nullable="false" />
+          <Property Name="sunday" Type="Boolean" Nullable="false" />
+          <Property Name="monday" Type="Boolean" Nullable="false" />
+          <Property Name="tuesday" Type="Boolean" Nullable="false" />
+          <Property Name="wednesday" Type="Boolean" Nullable="false" />
+          <Property Name="thrusday" Type="Boolean" Nullable="false" />
+          <Property Name="friday" Type="Boolean" Nullable="false" />
+          <Property Name="saturday" Type="Boolean" Nullable="false" />
+          <Property Name="starting_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="end_date" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="trips" Relationship="Self.FK__trips__service_i__5629CD9C" FromRole="calendar" ToRole="trips" />
+        </EntityType>
+        <EntityType Name="routesInfo">
+          <Key>
+            <PropertyRef Name="route_id" />
+          </Key>
+          <Property Name="route_id" Type="Int32" Nullable="false" />
+          <Property Name="agency_id" Type="Int32" Nullable="false" />
+          <Property Name="route_short_name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="route_long_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="route_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="route_type" Type="Int32" Nullable="false" />
+          <Property Name="route_color" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="agency" Relationship="Self.FK__routesInf__agenc__2F10007B" FromRole="routesInfo" ToRole="agency" />
+          <NavigationProperty Name="trips" Relationship="Self.FK__trips__route_id__5535A963" FromRole="routesInfo" ToRole="trips" />
+        </EntityType>
+        <EntityType Name="shape">
+          <Key>
+            <PropertyRef Name="shape_id" />
+          </Key>
+          <Property Name="shape_id" Type="Int32" Nullable="false" />
+          <Property Name="shape_pt_lat" Type="Double" Nullable="false" />
+          <Property Name="shape_pt_lon" Type="Double" Nullable="false" />
+          <Property Name="shape_pt_sequence" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="trips" Relationship="Self.FK__trips__shape_id__571DF1D5" FromRole="shapes" ToRole="trips" />
+        </EntityType>
+        <EntityType Name="stop">
+          <Key>
+            <PropertyRef Name="stop_id" />
+          </Key>
+          <Property Name="stop_id" Type="Int32" Nullable="false" />
+          <Property Name="stop_code" Type="Int32" Nullable="false" />
+          <Property Name="stop_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="stop_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="stop_times" Relationship="Self.FK__stop_time__stop___59FA5E80" FromRole="stops" ToRole="stop_times" />
+        </EntityType>
+        <EntityType Name="translation">
+          <Key>
+            <PropertyRef Name="trans_id" />
+          </Key>
+          <Property Name="trans_id" Type="Int32" Nullable="false" />
+          <Property Name="lang" Type="Boolean" Nullable="false" />
+          <Property Name="translation1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="trip">
+          <Key>
+            <PropertyRef Name="trip_id" />
+          </Key>
+          <Property Name="route_id" Type="Int32" Nullable="false" />
+          <Property Name="service_id" Type="Int32" Nullable="false" />
+          <Property Name="trip_id" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="direction_id" Type="Int32" Nullable="false" />
+          <Property Name="shape_id" Type="Int32" />
+          <NavigationProperty Name="calendar" Relationship="Self.FK__trips__service_i__5629CD9C" FromRole="trips" ToRole="calendar" />
+          <NavigationProperty Name="routesInfo" Relationship="Self.FK__trips__route_id__5535A963" FromRole="trips" ToRole="routesInfo" />
+          <NavigationProperty Name="shape" Relationship="Self.FK__trips__shape_id__571DF1D5" FromRole="trips" ToRole="shapes" />
+          <NavigationProperty Name="stop_times" Relationship="Self.FK__stop_time__trip___59063A47" FromRole="trips" ToRole="stop_times" />
+        </EntityType>
+        <EntityType Name="stop_times">
+          <Key>
+            <PropertyRef Name="trip_id" />
+            <PropertyRef Name="arrival_time" />
+          </Key>
+          <Property Name="trip_id" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="arrival_time" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="departure_time" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="stop_id" Type="Int32" Nullable="false" />
+          <Property Name="stop_sequence" Type="Int32" Nullable="false" />
+          <Property Name="pickup_type" Type="Int32" Nullable="false" />
+          <Property Name="drop_off_type" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="stop" Relationship="Self.FK__stop_time__stop___59FA5E80" FromRole="stop_times" ToRole="stops" />
+          <NavigationProperty Name="trip" Relationship="Self.FK__stop_time__trip___59063A47" FromRole="stop_times" ToRole="trips" />
+        </EntityType>
+        <Association Name="FK__routesInf__agenc__2F10007B">
+          <End Role="agency" Type="Self.agency" Multiplicity="1" />
+          <End Role="routesInfo" Type="Self.routesInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="agency">
+              <PropertyRef Name="agency_id" />
+            </Principal>
+            <Dependent Role="routesInfo">
+              <PropertyRef Name="agency_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips__service_i__5629CD9C">
+          <End Role="calendar" Type="Self.calendar" Multiplicity="1" />
+          <End Role="trips" Type="Self.trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="calendar">
+              <PropertyRef Name="service_id" />
+            </Principal>
+            <Dependent Role="trips">
+              <PropertyRef Name="service_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips__route_id__5535A963">
+          <End Role="routesInfo" Type="Self.routesInfo" Multiplicity="1" />
+          <End Role="trips" Type="Self.trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="routesInfo">
+              <PropertyRef Name="route_id" />
+            </Principal>
+            <Dependent Role="trips">
+              <PropertyRef Name="route_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips__shape_id__571DF1D5">
+          <End Role="shapes" Type="Self.shape" Multiplicity="0..1" />
+          <End Role="trips" Type="Self.trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shapes">
+              <PropertyRef Name="shape_id" />
+            </Principal>
+            <Dependent Role="trips">
+              <PropertyRef Name="shape_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stop_time__stop___59FA5E80">
+          <End Role="stops" Type="Self.stop" Multiplicity="1" />
+          <End Role="stop_times" Type="Self.stop_times" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="stops">
+              <PropertyRef Name="stop_id" />
+            </Principal>
+            <Dependent Role="stop_times">
+              <PropertyRef Name="stop_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stop_time__trip___59063A47">
+          <End Role="trips" Type="Self.trip" Multiplicity="1" />
+          <End Role="stop_times" Type="Self.stop_times" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="trips">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="stop_times">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="publicTransportDataEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="agencies" EntityType="Self.agency" />
+          <EntitySet Name="calendars" EntityType="Self.calendar" />
+          <EntitySet Name="routesInfoes" EntityType="Self.routesInfo" />
+          <EntitySet Name="shapes" EntityType="Self.shape" />
+          <EntitySet Name="stops" EntityType="Self.stop" />
+          <EntitySet Name="translations" EntityType="Self.translation" />
+          <EntitySet Name="trips" EntityType="Self.trip" />
+          <EntitySet Name="stop_times" EntityType="Self.stop_times" />
+          <AssociationSet Name="FK__routesInf__agenc__2F10007B" Association="Self.FK__routesInf__agenc__2F10007B">
+            <End Role="agency" EntitySet="agencies" />
+            <End Role="routesInfo" EntitySet="routesInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips__service_i__5629CD9C" Association="Self.FK__trips__service_i__5629CD9C">
+            <End Role="calendar" EntitySet="calendars" />
+            <End Role="trips" EntitySet="trips" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips__route_id__5535A963" Association="Self.FK__trips__route_id__5535A963">
+            <End Role="routesInfo" EntitySet="routesInfoes" />
+            <End Role="trips" EntitySet="trips" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips__shape_id__571DF1D5" Association="Self.FK__trips__shape_id__571DF1D5">
+            <End Role="shapes" EntitySet="shapes" />
+            <End Role="trips" EntitySet="trips" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stop_time__stop___59FA5E80" Association="Self.FK__stop_time__stop___59FA5E80">
+            <End Role="stops" EntitySet="stops" />
+            <End Role="stop_times" EntitySet="stop_times" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stop_time__trip___59063A47" Association="Self.FK__stop_time__trip___59063A47">
+            <End Role="trips" EntitySet="trips" />
+            <End Role="stop_times" EntitySet="stop_times" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="publicTransportDataModelStoreContainer" CdmEntityContainer="publicTransportDataEntities">
+          <EntitySetMapping Name="agencies">
+            <EntityTypeMapping TypeName="publicTransportDataModel.agency">
+              <MappingFragment StoreEntitySet="agency">
+                <ScalarProperty Name="agency_id" ColumnName="agency_id" />
+                <ScalarProperty Name="agency_url" ColumnName="agency_url" />
+                <ScalarProperty Name="agency_timezone" ColumnName="agency_timezone" />
+                <ScalarProperty Name="agency_lang" ColumnName="agency_lang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="calendars">
+            <EntityTypeMapping TypeName="publicTransportDataModel.calendar">
+              <MappingFragment StoreEntitySet="calendar">
+                <ScalarProperty Name="service_id" ColumnName="service_id" />
+                <ScalarProperty Name="sunday" ColumnName="sunday" />
+                <ScalarProperty Name="monday" ColumnName="monday" />
+                <ScalarProperty Name="tuesday" ColumnName="tuesday" />
+                <ScalarProperty Name="wednesday" ColumnName="wednesday" />
+                <ScalarProperty Name="thrusday" ColumnName="thrusday" />
+                <ScalarProperty Name="friday" ColumnName="friday" />
+                <ScalarProperty Name="saturday" ColumnName="saturday" />
+                <ScalarProperty Name="starting_date" ColumnName="starting_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="routesInfoes">
+            <EntityTypeMapping TypeName="publicTransportDataModel.routesInfo">
+              <MappingFragment StoreEntitySet="routesInfo">
+                <ScalarProperty Name="route_id" ColumnName="route_id" />
+                <ScalarProperty Name="agency_id" ColumnName="agency_id" />
+                <ScalarProperty Name="route_short_name" ColumnName="route_short_name" />
+                <ScalarProperty Name="route_long_name" ColumnName="route_long_name" />
+                <ScalarProperty Name="route_desc" ColumnName="route_desc" />
+                <ScalarProperty Name="route_type" ColumnName="route_type" />
+                <ScalarProperty Name="route_color" ColumnName="route_color" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="shapes">
+            <EntityTypeMapping TypeName="publicTransportDataModel.shape">
+              <MappingFragment StoreEntitySet="shapes">
+                <ScalarProperty Name="shape_id" ColumnName="shape_id" />
+                <ScalarProperty Name="shape_pt_lat" ColumnName="shape_pt_lat" />
+                <ScalarProperty Name="shape_pt_lon" ColumnName="shape_pt_lon" />
+                <ScalarProperty Name="shape_pt_sequence" ColumnName="shape_pt_sequence" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stops">
+            <EntityTypeMapping TypeName="publicTransportDataModel.stop">
+              <MappingFragment StoreEntitySet="stops">
+                <ScalarProperty Name="stop_id" ColumnName="stop_id" />
+                <ScalarProperty Name="stop_code" ColumnName="stop_code" />
+                <ScalarProperty Name="stop_name" ColumnName="stop_name" />
+                <ScalarProperty Name="stop_desc" ColumnName="stop_desc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="translations">
+            <EntityTypeMapping TypeName="publicTransportDataModel.translation">
+              <MappingFragment StoreEntitySet="translations">
+                <ScalarProperty Name="trans_id" ColumnName="trans_id" />
+                <ScalarProperty Name="lang" ColumnName="lang" />
+                <ScalarProperty Name="translation1" ColumnName="translation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="trips">
+            <EntityTypeMapping TypeName="publicTransportDataModel.trip">
+              <MappingFragment StoreEntitySet="trips">
+                <ScalarProperty Name="route_id" ColumnName="route_id" />
+                <ScalarProperty Name="service_id" ColumnName="service_id" />
+                <ScalarProperty Name="trip_id" ColumnName="trip_id" />
+                <ScalarProperty Name="direction_id" ColumnName="direction_id" />
+                <ScalarProperty Name="shape_id" ColumnName="shape_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stop_times">
+            <EntityTypeMapping TypeName="publicTransportDataModel.stop_times">
+              <MappingFragment StoreEntitySet="stop_times">
+                <ScalarProperty Name="trip_id" ColumnName="trip_id" />
+                <ScalarProperty Name="arrival_time" ColumnName="arrival_time" />
+                <ScalarProperty Name="departure_time" ColumnName="departure_time" />
+                <ScalarProperty Name="stop_id" ColumnName="stop_id" />
+                <ScalarProperty Name="stop_sequence" ColumnName="stop_sequence" />
+                <ScalarProperty Name="pickup_type" ColumnName="pickup_type" />
+                <ScalarProperty Name="drop_off_type" ColumnName="drop_off_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
