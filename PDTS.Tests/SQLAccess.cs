@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace PDTS.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class SQLAccess
     {
         [TestMethod]
         public void TestMethod1()

@@ -33,6 +33,19 @@ namespace PDTS.Data_Access_Layer
             }
         }
 
+        public static int RemoveAgency(int agencyId)
+        {
+            try
+            {
+                AgencyRepository.Delete(agencyId);
+                return agencyId;
+            }
+            catch
+            {
+                return -1;
+            }
+        }
+
         public static string CreateTrip(int routeId, int serviceId, string tripId, int directionId, int shapeId)
         {
             try
