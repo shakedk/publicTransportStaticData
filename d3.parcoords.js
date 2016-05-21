@@ -500,7 +500,7 @@ function compute_centroids(row) {
 	//for (var i = 0; i < cols; ++i) 
 	for (var i in p) {
 		// centroids on 'real' axes
-		var x = position(i);
+		var x = position(p[i]);
 		var y = yscale[p[i]](row[p[i]]);
     centroids.push([x, y]);
 		//centroids.push($V([x, y]));
