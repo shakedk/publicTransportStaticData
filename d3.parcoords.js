@@ -495,7 +495,7 @@ function compute_centroids(row) {
 	var centroids = [];
 
 	var p = __.dimensions;
-	var cols = p.length;
+	var cols = p.size();
 	var a = 0.5;			// center between axes
 	for (var i = 0; i < cols; ++i) {
 		// centroids on 'real' axes
