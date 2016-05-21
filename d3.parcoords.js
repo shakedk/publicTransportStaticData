@@ -497,9 +497,10 @@ function compute_centroids(row) {
 	var p = __.dimensions;
 	var cols = Object.keys(p).length;
 	var a = 0.5;			// center between axes
-	for (var i = 0; i < cols; ++i) {
+	//for (var i = 0; i < cols; ++i) 
+	for (var i in p) {
 		// centroids on 'real' axes
-		var x = position(p[i]);
+		var x = position(i);
 		var y = yscale[p[i]](row[p[i]]);
     centroids.push([x, y]);
 		//centroids.push($V([x, y]));
