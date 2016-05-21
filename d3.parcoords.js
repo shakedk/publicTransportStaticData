@@ -519,7 +519,6 @@ function compute_centroids(row) {
 
 	return centroids;
 }
-
 pc.compute_centroids = compute_centroids;
 
 function compute_control_points(centroids) {
