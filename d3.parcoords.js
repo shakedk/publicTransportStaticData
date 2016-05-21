@@ -494,31 +494,34 @@ pc.renderBrushed.queue = function() {
 function compute_centroids(row) {
 	var centroids = [];
 
-	var p = d3.keys(__.dimensions);
+	var p = __.dimensions;
 	var cols = p.length;
 	var a = 0.5;			// center between axes
 	for (var i = 0; i < cols; ++i) {
 		// centroids on 'real' axes
 		var x = position(p[i]);
-		var y = __.dimensions[p[i]].yscale(row[p[i]]);
-		centroids.push($V([x, y]));
+		var y = yscale[p[i]](row[p[i]]);
+    centroids.push([x, y]);
+		//centroids.push($V([x, y]));
 
 		// centroids on 'virtual' axes
 		if (i < cols - 1) {
 			var cx = x + a * (position(p[i+1]) - x);
-			var cy = y + a * (__.dimensions[p[i+1]].yscale(row[p[i+1]]) - y);
+			var cy = y + a * (yscale[p[i+1]](row[p[i+1]]) - y);
 			if (__.bundleDimension !== null) {
-				var leftCentroid = __.clusterCentroids.get(__.dimensions[__.bundleDimension].yscale(row[__.bundleDimension])).get(p[i]);
-				var rightCentroid = __.clusterCentroids.get(__.dimensions[__.bundleDimension].yscale(row[__.bundleDimension])).get(p[i+1]);
+				var leftCentroid = __.clusterCentroids.get(yscale[__.bundleDimension](row[__.bundleDimension])).get(p[i]);
+				var rightCentroid = __.clusterCentroids.get(yscale[__.bundleDimension](row[__.bundleDimension])).get(p[i+1]);
 				var centroid = 0.5 * (leftCentroid + rightCentroid);
 				cy = centroid + (1 - __.bundlingStrength) * (cy - centroid);
 			}
-			centroids.push($V([cx, cy]));
+      centroids.push([cx, cy]);
+			//centroids.push($V([cx, cy]));
 		}
 	}
 
 	return centroids;
 }
+
 pc.compute_centroids = compute_centroids;
 
 function compute_control_points(centroids) {
