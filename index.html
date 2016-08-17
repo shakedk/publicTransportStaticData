@@ -1,22 +1,3 @@
-<!--Version 1-->
-<!--This version includes the following mapping:
-Map is a leaflet map with mapbox tiles.
-Lines are drawn using leaflet API (hence it's styling)
-Station are mapped to d3 changeStations.
-line path is mapped to shape. Each line mapped to differrent color
-Every relevant station (i.e. station where two lines intersect) is mapped to a circle with a text.
-The best station to switch stations at has double mappings:
-1. The better the station (=the shorter time), the bigger the station's icon.
- The waiting time is mapped to the circle's radius ([Max time - current time]), the bigger the better.
-2. The better the station, the darker is the station's hue.
-The waiting time is mapped to the circle's hue and indicated in a hover tooltip.
-Coloring: the lines and the circle are 3 distinctive colors (red, blue and green). The station's colors received sequntial scaling.
-Next iterations: suggestions:
-- Cancel double mapping: map stations to icons and shortest waiting time to darkest hue.
-- Add a legend for the waiting times
-- Add a tooltip for the line
-- Add origin & destination stations indication
--->
 <!DOCTYPE html>
 <html>
 <!--import thr leaflet css-->
@@ -24,9 +5,9 @@ Next iterations: suggestions:
 	href="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.css" />
 <link rel="stylesheet" type="text/css"
 	href="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.css">
-<link rel="stylesheet" type="text/css" href=css/transUccess.css>
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="css/iThing.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href=/transUccess.css>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQRangeSlider/5.7.2/css/iThing.css" type="text/css" />
 <head>
 
 <!--Script imports-->
@@ -42,9 +23,9 @@ Next iterations: suggestions:
 <!-- Scripts for slider -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jQDateRangeSlider-min.js"></script>
-<script src="js/transUccess.min.js"></script>
+<script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQRangeSlider/5.7.2/jQDateRangeSlider.min.js"></script>
+<script src="transUccess.min.js"></script>
 
 <title>TransUccess - Tel Aviv</title>
 </head>
