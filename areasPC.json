@@ -1,0 +1,1425 @@
+[ {
+  "areaID" : 231,
+  "numberOfStopsInArea" : 44,
+  "shapeArea" : 0.380694,
+  "population" : 4250,
+  "averageFrequencies" : 7.795454545454547,
+  "medianIncome" : 7800.0,
+  "tai" : 3.7343436698866754
+}, {
+  "areaID" : 111,
+  "numberOfStopsInArea" : 70,
+  "shapeArea" : 3.191897,
+  "population" : 2665,
+  "averageFrequencies" : 21.17619047619047,
+  "medianIncome" : 9850.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 232,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.405577,
+  "population" : 2580,
+  "averageFrequencies" : 9.866666666666665,
+  "medianIncome" : 9000.0,
+  "tai" : 2.9685600309475464
+}, {
+  "areaID" : 112,
+  "numberOfStopsInArea" : 29,
+  "shapeArea" : 1.158055,
+  "population" : 2665,
+  "averageFrequencies" : 16.839080459770116,
+  "medianIncome" : 9850.0,
+  "tai" : 1.8386372802121083
+}, {
+  "areaID" : 233,
+  "numberOfStopsInArea" : 63,
+  "shapeArea" : 0.724839,
+  "population" : 4050,
+  "averageFrequencies" : 11.407407407407408,
+  "medianIncome" : 7420.0,
+  "tai" : 3.0046193928441025
+}, {
+  "areaID" : 113,
+  "numberOfStopsInArea" : 29,
+  "shapeArea" : 0.756404,
+  "population" : 9680,
+  "averageFrequencies" : 15.264367816091957,
+  "medianIncome" : 7550.0,
+  "tai" : 5.628852749152241
+}, {
+  "areaID" : 234,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.555108,
+  "population" : 300,
+  "averageFrequencies" : 13.066666666666666,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 114,
+  "numberOfStopsInArea" : 51,
+  "shapeArea" : 0.873613,
+  "population" : 5520,
+  "averageFrequencies" : 17.797385620915033,
+  "medianIncome" : 8380.0,
+  "tai" : 4.334949284603208
+}, {
+  "areaID" : 235,
+  "numberOfStopsInArea" : 16,
+  "shapeArea" : 0.943857,
+  "population" : 0,
+  "averageFrequencies" : 12.687500000000002,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 115,
+  "numberOfStopsInArea" : 42,
+  "shapeArea" : 0.42123,
+  "population" : 4840,
+  "averageFrequencies" : 15.650793650793657,
+  "medianIncome" : 5080.0,
+  "tai" : 5.43495980933842
+}, {
+  "areaID" : 511,
+  "numberOfStopsInArea" : 27,
+  "shapeArea" : 0.180228,
+  "population" : 1260,
+  "averageFrequencies" : 21.469135802469136,
+  "medianIncome" : 5210.0,
+  "tai" : 5.011437475516363
+}, {
+  "areaID" : 512,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.097664,
+  "population" : 2100,
+  "averageFrequencies" : 25.72222222222222,
+  "medianIncome" : 3460.0,
+  "tai" : 8.067452704236455
+}, {
+  "areaID" : 513,
+  "numberOfStopsInArea" : 40,
+  "shapeArea" : 0.101146,
+  "population" : 2230,
+  "averageFrequencies" : 29.76666666666667,
+  "medianIncome" : 5660.0,
+  "tai" : 8.468280021624107
+}, {
+  "areaID" : 514,
+  "numberOfStopsInArea" : 46,
+  "shapeArea" : 0.118717,
+  "population" : 2730,
+  "averageFrequencies" : 25.47101449275363,
+  "medianIncome" : 4710.0,
+  "tai" : 8.201808200662159
+}, {
+  "areaID" : 515,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.108975,
+  "population" : 3460,
+  "averageFrequencies" : 25.465116279069772,
+  "medianIncome" : 5190.0,
+  "tai" : 8.957132727439445
+}, {
+  "areaID" : 911,
+  "numberOfStopsInArea" : 18,
+  "shapeArea" : 0.139812,
+  "population" : 4420,
+  "averageFrequencies" : 19.87037037037037,
+  "medianIncome" : 6310.0,
+  "tai" : 8.365757019464493
+}, {
+  "areaID" : 516,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.129729,
+  "population" : 3980,
+  "averageFrequencies" : 26.56296296296296,
+  "medianIncome" : 5280.0,
+  "tai" : 8.975625556030034
+}, {
+  "areaID" : 912,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.275599,
+  "population" : 3540,
+  "averageFrequencies" : 13.9247311827957,
+  "medianIncome" : 5360.0,
+  "tai" : 5.422281110290547
+}, {
+  "areaID" : 517,
+  "numberOfStopsInArea" : 40,
+  "shapeArea" : 0.130391,
+  "population" : 3210,
+  "averageFrequencies" : 21.516666666666662,
+  "medianIncome" : 5840.0,
+  "tai" : 7.966233762410409
+}, {
+  "areaID" : 913,
+  "numberOfStopsInArea" : 47,
+  "shapeArea" : 0.141261,
+  "population" : 10,
+  "averageFrequencies" : 30.808510638297868,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 914,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.326779,
+  "population" : 840,
+  "averageFrequencies" : 26.837209302325583,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 915,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.206432,
+  "population" : 3210,
+  "averageFrequencies" : 15.500000000000004,
+  "medianIncome" : 7400.0,
+  "tai" : 6.121216756626978
+}, {
+  "areaID" : 916,
+  "numberOfStopsInArea" : 20,
+  "shapeArea" : 0.165357,
+  "population" : 1860,
+  "averageFrequencies" : 13.38333333333333,
+  "medianIncome" : 3790.0,
+  "tai" : 5.018407069717324
+}, {
+  "areaID" : 121,
+  "numberOfStopsInArea" : 10,
+  "shapeArea" : 0.424162,
+  "population" : 3870,
+  "averageFrequencies" : 13.433333333333334,
+  "medianIncome" : 6740.0,
+  "tai" : 4.536659183129734
+}, {
+  "areaID" : 122,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.407484,
+  "population" : 3660,
+  "averageFrequencies" : 14.263888888888891,
+  "medianIncome" : 9810.0,
+  "tai" : 4.640492694697317
+}, {
+  "areaID" : 123,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.269936,
+  "population" : 4570,
+  "averageFrequencies" : 12.637254901960787,
+  "medianIncome" : 4790.0,
+  "tai" : 5.842005777370675
+}, {
+  "areaID" : 124,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.286068,
+  "population" : 4470,
+  "averageFrequencies" : 11.069767441860465,
+  "medianIncome" : 9000.0,
+  "tai" : 5.343857829664115
+}, {
+  "areaID" : 125,
+  "numberOfStopsInArea" : 42,
+  "shapeArea" : 0.232621,
+  "population" : 4610,
+  "averageFrequencies" : 14.785714285714286,
+  "medianIncome" : 7230.0,
+  "tai" : 6.578917890524122
+}, {
+  "areaID" : 521,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.120631,
+  "population" : 1660,
+  "averageFrequencies" : 29.372549019607845,
+  "medianIncome" : 4250.0,
+  "tai" : 7.332610754629045
+}, {
+  "areaID" : 522,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.134153,
+  "population" : 1780,
+  "averageFrequencies" : 20.342592592592595,
+  "medianIncome" : 5980.0,
+  "tai" : 6.386479111445099
+}, {
+  "areaID" : 523,
+  "numberOfStopsInArea" : 50,
+  "shapeArea" : 0.136557,
+  "population" : 1390,
+  "averageFrequencies" : 26.21333333333333,
+  "medianIncome" : 3910.0,
+  "tai" : 6.3594877479524685
+}, {
+  "areaID" : 921,
+  "numberOfStopsInArea" : 27,
+  "shapeArea" : 0.370394,
+  "population" : 4450,
+  "averageFrequencies" : 20.160493827160494,
+  "medianIncome" : 5620.0,
+  "tai" : 6.132749160507306
+}, {
+  "areaID" : 922,
+  "numberOfStopsInArea" : 22,
+  "shapeArea" : 0.327197,
+  "population" : 2010,
+  "averageFrequencies" : 17.469696969696965,
+  "medianIncome" : 3170.0,
+  "tai" : 4.225404339322711
+}, {
+  "areaID" : 923,
+  "numberOfStopsInArea" : 35,
+  "shapeArea" : 0.277234,
+  "population" : 440,
+  "averageFrequencies" : 16.685714285714276,
+  "medianIncome" : 3950.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 924,
+  "numberOfStopsInArea" : 25,
+  "shapeArea" : 0.125025,
+  "population" : 1250,
+  "averageFrequencies" : 13.519999999999992,
+  "medianIncome" : 3600.0,
+  "tai" : 4.766100741631182
+}, {
+  "areaID" : 925,
+  "numberOfStopsInArea" : 42,
+  "shapeArea" : 0.241406,
+  "population" : 3300,
+  "averageFrequencies" : 15.238095238095232,
+  "medianIncome" : 3540.0,
+  "tai" : 5.779358812026046
+}, {
+  "areaID" : 926,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.244153,
+  "population" : 3230,
+  "averageFrequencies" : 17.46511627906977,
+  "medianIncome" : 6260.0,
+  "tai" : 6.022226542414894
+}, {
+  "areaID" : 927,
+  "numberOfStopsInArea" : 41,
+  "shapeArea" : 0.400321,
+  "population" : 4860,
+  "averageFrequencies" : 19.211382113821138,
+  "medianIncome" : 4530.0,
+  "tai" : 6.044209721047666
+}, {
+  "areaID" : 928,
+  "numberOfStopsInArea" : 38,
+  "shapeArea" : 0.232633,
+  "population" : 0,
+  "averageFrequencies" : 26.42105263157895,
+  "medianIncome" : 3890.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 929,
+  "numberOfStopsInArea" : 44,
+  "shapeArea" : 0.32753,
+  "population" : 4120,
+  "averageFrequencies" : 23.15909090909091,
+  "medianIncome" : 3890.0,
+  "tai" : 6.56528591123218
+}, {
+  "areaID" : 131,
+  "numberOfStopsInArea" : 33,
+  "shapeArea" : 0.534391,
+  "population" : 2420,
+  "averageFrequencies" : 14.646464646464645,
+  "medianIncome" : 10550.0,
+  "tai" : 3.097895228602188
+}, {
+  "areaID" : 132,
+  "numberOfStopsInArea" : 47,
+  "shapeArea" : 0.257427,
+  "population" : 3360,
+  "averageFrequencies" : 14.780141843971633,
+  "medianIncome" : 4820.0,
+  "tai" : 5.599521223707002
+}, {
+  "areaID" : 133,
+  "numberOfStopsInArea" : 66,
+  "shapeArea" : 0.513371,
+  "population" : 4940,
+  "averageFrequencies" : 17.974747474747485,
+  "medianIncome" : 6350.0,
+  "tai" : 5.343758957269056
+}, {
+  "areaID" : 134,
+  "numberOfStopsInArea" : 55,
+  "shapeArea" : 0.348557,
+  "population" : 3720,
+  "averageFrequencies" : 19.07878787878788,
+  "medianIncome" : 5050.0,
+  "tai" : 5.726072122665392
+}, {
+  "areaID" : 135,
+  "numberOfStopsInArea" : 90,
+  "shapeArea" : 1.459851,
+  "population" : 0,
+  "averageFrequencies" : 17.962962962962965,
+  "medianIncome" : 5050.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 531,
+  "numberOfStopsInArea" : 39,
+  "shapeArea" : 0.370541,
+  "population" : 0,
+  "averageFrequencies" : 19.36752136752137,
+  "medianIncome" : 5600.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 136,
+  "numberOfStopsInArea" : 54,
+  "shapeArea" : 1.881474,
+  "population" : 0,
+  "averageFrequencies" : 22.32716049382716,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 411,
+  "numberOfStopsInArea" : 33,
+  "shapeArea" : 0.970669,
+  "population" : 4830,
+  "averageFrequencies" : 20.828282828282827,
+  "medianIncome" : 9560.0,
+  "tai" : 4.143706296562398
+}, {
+  "areaID" : 532,
+  "numberOfStopsInArea" : 29,
+  "shapeArea" : 0.214961,
+  "population" : 580,
+  "averageFrequencies" : 19.01149425287356,
+  "medianIncome" : 7870.0,
+  "tai" : 2.495764886592897
+}, {
+  "areaID" : 412,
+  "numberOfStopsInArea" : 21,
+  "shapeArea" : 0.333226,
+  "population" : 4510,
+  "averageFrequencies" : 23.46031746031746,
+  "medianIncome" : 9260.0,
+  "tai" : 6.767088122746589
+}, {
+  "areaID" : 533,
+  "numberOfStopsInArea" : 65,
+  "shapeArea" : 0.315891,
+  "population" : 3410,
+  "averageFrequencies" : 23.24102564102564,
+  "medianIncome" : 5600.0,
+  "tai" : 6.215162087657619
+}, {
+  "areaID" : 413,
+  "numberOfStopsInArea" : 27,
+  "shapeArea" : 0.273125,
+  "population" : 3650,
+  "averageFrequencies" : 27.432098765432105,
+  "medianIncome" : 4010.0,
+  "tai" : 7.103851646406086
+}, {
+  "areaID" : 414,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.218196,
+  "population" : 2960,
+  "averageFrequencies" : 22.916666666666668,
+  "medianIncome" : 5630.0,
+  "tai" : 6.717586073711637
+}, {
+  "areaID" : 931,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.136561,
+  "population" : 1710,
+  "averageFrequencies" : 19.555555555555554,
+  "medianIncome" : 1180.0,
+  "tai" : 6.158335150418703
+}, {
+  "areaID" : 415,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.223279,
+  "population" : 3880,
+  "averageFrequencies" : 21.580645161290327,
+  "medianIncome" : 4380.0,
+  "tai" : 7.157036755449024
+}, {
+  "areaID" : 811,
+  "numberOfStopsInArea" : 51,
+  "shapeArea" : 0.165976,
+  "population" : 1460,
+  "averageFrequencies" : 23.274509803921568,
+  "medianIncome" : 3060.0,
+  "tai" : 5.7388490457655195
+}, {
+  "areaID" : 932,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.137565,
+  "population" : 710,
+  "averageFrequencies" : 13.299999999999995,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 812,
+  "numberOfStopsInArea" : 35,
+  "shapeArea" : 0.119068,
+  "population" : 4940,
+  "averageFrequencies" : 19.847619047619045,
+  "medianIncome" : 6150.0,
+  "tai" : 9.0
+}, {
+  "areaID" : 933,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.231417,
+  "population" : 3610,
+  "averageFrequencies" : 14.74444444444444,
+  "medianIncome" : 3370.0,
+  "tai" : 6.011589425417012
+}, {
+  "areaID" : 813,
+  "numberOfStopsInArea" : 41,
+  "shapeArea" : 0.068075,
+  "population" : 1850,
+  "averageFrequencies" : 23.617886178861788,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 934,
+  "numberOfStopsInArea" : 19,
+  "shapeArea" : 0.124281,
+  "population" : 1880,
+  "averageFrequencies" : 16.403508771929822,
+  "medianIncome" : 3370.0,
+  "tai" : 6.18935918728509
+}, {
+  "areaID" : 814,
+  "numberOfStopsInArea" : 124,
+  "shapeArea" : 0.226812,
+  "population" : 3000,
+  "averageFrequencies" : 16.631720430107528,
+  "medianIncome" : 1880.0,
+  "tai" : 5.907203013244993
+}, {
+  "areaID" : 935,
+  "numberOfStopsInArea" : 23,
+  "shapeArea" : 0.191687,
+  "population" : 1820,
+  "averageFrequencies" : 23.724637681159418,
+  "medianIncome" : 1590.0,
+  "tai" : 5.962697751153714
+}, {
+  "areaID" : 815,
+  "numberOfStopsInArea" : 130,
+  "shapeArea" : 0.231819,
+  "population" : 500,
+  "averageFrequencies" : 17.92051282051281,
+  "medianIncome" : 4670.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 936,
+  "numberOfStopsInArea" : 20,
+  "shapeArea" : 0.780149,
+  "population" : 2750,
+  "averageFrequencies" : 19.816666666666656,
+  "medianIncome" : 6550.0,
+  "tai" : 3.219269832473221
+}, {
+  "areaID" : 816,
+  "numberOfStopsInArea" : 106,
+  "shapeArea" : 0.207465,
+  "population" : 620,
+  "averageFrequencies" : 15.5,
+  "medianIncome" : 1980.0,
+  "tai" : 2.256724254765545
+}, {
+  "areaID" : 937,
+  "numberOfStopsInArea" : 23,
+  "shapeArea" : 1.163971,
+  "population" : 5160,
+  "averageFrequencies" : 19.36231884057971,
+  "medianIncome" : 5490.0,
+  "tai" : 3.702029379586998
+}, {
+  "areaID" : 541,
+  "numberOfStopsInArea" : 50,
+  "shapeArea" : 0.091815,
+  "population" : 1170,
+  "averageFrequencies" : 28.059999999999995,
+  "medianIncome" : 4490.0,
+  "tai" : 7.045418443704226
+}, {
+  "areaID" : 421,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.126891,
+  "population" : 2620,
+  "averageFrequencies" : 19.387096774193555,
+  "medianIncome" : 8160.0,
+  "tai" : 7.309910120256218
+}, {
+  "areaID" : 542,
+  "numberOfStopsInArea" : 46,
+  "shapeArea" : 0.074192,
+  "population" : 1050,
+  "averageFrequencies" : 28.717391304347824,
+  "medianIncome" : 8410.0,
+  "tai" : 7.345485950613579
+}, {
+  "areaID" : 422,
+  "numberOfStopsInArea" : 29,
+  "shapeArea" : 0.142087,
+  "population" : 3190,
+  "averageFrequencies" : 18.758620689655178,
+  "medianIncome" : 11220.0,
+  "tai" : 7.428896191276449
+}, {
+  "areaID" : 543,
+  "numberOfStopsInArea" : 48,
+  "shapeArea" : 0.081149,
+  "population" : 1430,
+  "averageFrequencies" : 26.993055555555557,
+  "medianIncome" : 3920.0,
+  "tai" : 7.714128776423405
+}, {
+  "areaID" : 423,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.316688,
+  "population" : 3100,
+  "averageFrequencies" : 28.200000000000006,
+  "medianIncome" : 9470.0,
+  "tai" : 6.439100176863411
+}, {
+  "areaID" : 544,
+  "numberOfStopsInArea" : 42,
+  "shapeArea" : 0.074209,
+  "population" : 1980,
+  "averageFrequencies" : 28.174603174603174,
+  "medianIncome" : 5830.0,
+  "tai" : 8.786490282429249
+}, {
+  "areaID" : 424,
+  "numberOfStopsInArea" : 38,
+  "shapeArea" : 0.171808,
+  "population" : 2760,
+  "averageFrequencies" : 29.754385964912277,
+  "medianIncome" : 8160.0,
+  "tai" : 7.725522279767274
+}, {
+  "areaID" : 941,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.253347,
+  "population" : 3150,
+  "averageFrequencies" : 14.656249999999995,
+  "medianIncome" : 3510.0,
+  "tai" : 5.466010467075485
+}, {
+  "areaID" : 425,
+  "numberOfStopsInArea" : 22,
+  "shapeArea" : 0.099485,
+  "population" : 1050,
+  "averageFrequencies" : 17.227272727272727,
+  "medianIncome" : 12430.0,
+  "tai" : 5.460780190899878
+}, {
+  "areaID" : 821,
+  "numberOfStopsInArea" : 112,
+  "shapeArea" : 0.178769,
+  "population" : 660,
+  "averageFrequencies" : 14.750000000000004,
+  "medianIncome" : 4510.0,
+  "tai" : 2.6358202633533163
+}, {
+  "areaID" : 942,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.239869,
+  "population" : 5160,
+  "averageFrequencies" : 13.50980392156862,
+  "medianIncome" : 4150.0,
+  "tai" : 6.559658616004399
+}, {
+  "areaID" : 426,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.123823,
+  "population" : 1050,
+  "averageFrequencies" : 20.375,
+  "medianIncome" : 12430.0,
+  "tai" : 5.34120798998027
+}, {
+  "areaID" : 822,
+  "numberOfStopsInArea" : 111,
+  "shapeArea" : 0.270221,
+  "population" : 2930,
+  "averageFrequencies" : 14.096096096096105,
+  "medianIncome" : 3500.0,
+  "tai" : 5.0539762299822675
+}, {
+  "areaID" : 943,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.206705,
+  "population" : 2950,
+  "averageFrequencies" : 15.866666666666665,
+  "medianIncome" : 5360.0,
+  "tai" : 5.974990299940595
+}, {
+  "areaID" : 823,
+  "numberOfStopsInArea" : 91,
+  "shapeArea" : 0.351145,
+  "population" : 1500,
+  "averageFrequencies" : 11.318681318681316,
+  "medianIncome" : 2950.0,
+  "tai" : 2.3571942893012174
+}, {
+  "areaID" : 944,
+  "numberOfStopsInArea" : 21,
+  "shapeArea" : 0.124091,
+  "population" : 3670,
+  "averageFrequencies" : 18.841269841269842,
+  "medianIncome" : 7830.0,
+  "tai" : 8.084947647545938
+}, {
+  "areaID" : 824,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.201888,
+  "population" : 2450,
+  "averageFrequencies" : 16.483870967741936,
+  "medianIncome" : 5300.0,
+  "tai" : 5.684501296993289
+}, {
+  "areaID" : 945,
+  "numberOfStopsInArea" : 25,
+  "shapeArea" : 0.149021,
+  "population" : 2680,
+  "averageFrequencies" : 14.719999999999994,
+  "medianIncome" : 5400.0,
+  "tai" : 6.340993199663399
+}, {
+  "areaID" : 825,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.067017,
+  "population" : 0,
+  "averageFrequencies" : 18.255555555555553,
+  "medianIncome" : 3500.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 946,
+  "numberOfStopsInArea" : 21,
+  "shapeArea" : 0.155041,
+  "population" : 3410,
+  "averageFrequencies" : 17.22222222222222,
+  "medianIncome" : 5080.0,
+  "tai" : 7.180499129569682
+}, {
+  "areaID" : 826,
+  "numberOfStopsInArea" : 40,
+  "shapeArea" : 0.122133,
+  "population" : 820,
+  "averageFrequencies" : 21.025,
+  "medianIncome" : 4710.0,
+  "tai" : 4.867676445865145
+}, {
+  "areaID" : 947,
+  "numberOfStopsInArea" : 17,
+  "shapeArea" : 0.185019,
+  "population" : 4850,
+  "averageFrequencies" : 19.784313725490193,
+  "medianIncome" : 5540.0,
+  "tai" : 7.91667324893505
+}, {
+  "areaID" : 551,
+  "numberOfStopsInArea" : 41,
+  "shapeArea" : 0.042821,
+  "population" : 453,
+  "averageFrequencies" : 27.35772357723577,
+  "medianIncome" : 5650.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 431,
+  "numberOfStopsInArea" : 38,
+  "shapeArea" : 0.148636,
+  "population" : 2780,
+  "averageFrequencies" : 22.771929824561404,
+  "medianIncome" : 7640.0,
+  "tai" : 7.455243104909787
+}, {
+  "areaID" : 552,
+  "numberOfStopsInArea" : 48,
+  "shapeArea" : 0.13962,
+  "population" : 950,
+  "averageFrequencies" : 24.444444444444446,
+  "medianIncome" : 7000.0,
+  "tai" : 5.252028007594488
+}, {
+  "areaID" : 311,
+  "numberOfStopsInArea" : 27,
+  "shapeArea" : 0.212101,
+  "population" : 0,
+  "averageFrequencies" : 17.185185185185187,
+  "medianIncome" : 4960.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 432,
+  "numberOfStopsInArea" : 41,
+  "shapeArea" : 0.206392,
+  "population" : 3760,
+  "averageFrequencies" : 23.918699186991873,
+  "medianIncome" : 9060.0,
+  "tai" : 7.508720061503011
+}, {
+  "areaID" : 553,
+  "numberOfStopsInArea" : 68,
+  "shapeArea" : 0.127795,
+  "population" : 453,
+  "averageFrequencies" : 27.313725490196074,
+  "medianIncome" : 5650.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 312,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.167681,
+  "population" : 2310,
+  "averageFrequencies" : 17.66666666666667,
+  "medianIncome" : 4960.0,
+  "tai" : 6.144000916144603
+}, {
+  "areaID" : 433,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.200912,
+  "population" : 2860,
+  "averageFrequencies" : 22.600000000000005,
+  "medianIncome" : 5620.0,
+  "tai" : 6.797824938948018
+}, {
+  "areaID" : 554,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.048648,
+  "population" : 990,
+  "averageFrequencies" : 24.44961240310078,
+  "medianIncome" : 6430.0,
+  "tai" : 7.819536588990032
+}, {
+  "areaID" : 313,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.116001,
+  "population" : 2030,
+  "averageFrequencies" : 16.92592592592593,
+  "medianIncome" : 4510.0,
+  "tai" : 6.6042345369031255
+}, {
+  "areaID" : 434,
+  "numberOfStopsInArea" : 33,
+  "shapeArea" : 0.141798,
+  "population" : 80,
+  "averageFrequencies" : 32.77777777777778,
+  "medianIncome" : 5620.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 555,
+  "numberOfStopsInArea" : 50,
+  "shapeArea" : 0.10382,
+  "population" : 2040,
+  "averageFrequencies" : 26.953333333333333,
+  "medianIncome" : 5510.0,
+  "tai" : 7.965851872328058
+}, {
+  "areaID" : 314,
+  "numberOfStopsInArea" : 42,
+  "shapeArea" : 0.223827,
+  "population" : 4240,
+  "averageFrequencies" : 20.214285714285715,
+  "medianIncome" : 7200.0,
+  "tai" : 7.205936369293617
+}, {
+  "areaID" : 435,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.121705,
+  "population" : 770,
+  "averageFrequencies" : 38.15555555555556,
+  "medianIncome" : 6240.0,
+  "tai" : 6.1248875302932095
+}, {
+  "areaID" : 556,
+  "numberOfStopsInArea" : 58,
+  "shapeArea" : 0.080641,
+  "population" : 453,
+  "averageFrequencies" : 26.040229885057464,
+  "medianIncome" : 5650.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 831,
+  "numberOfStopsInArea" : 44,
+  "shapeArea" : 0.408514,
+  "population" : 0,
+  "averageFrequencies" : 19.083333333333332,
+  "medianIncome" : 5060.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 315,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.178098,
+  "population" : 3930,
+  "averageFrequencies" : 21.697674418604645,
+  "medianIncome" : 7950.0,
+  "tai" : 7.729460810223597
+}, {
+  "areaID" : 436,
+  "numberOfStopsInArea" : 49,
+  "shapeArea" : 0.142137,
+  "population" : 1880,
+  "averageFrequencies" : 36.034013605442176,
+  "medianIncome" : 6150.0,
+  "tai" : 7.718760187489558
+}, {
+  "areaID" : 711,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.203373,
+  "population" : 1670,
+  "averageFrequencies" : 21.555555555555546,
+  "medianIncome" : 6260.0,
+  "tai" : 5.397840517716503
+}, {
+  "areaID" : 832,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.353781,
+  "population" : 3850,
+  "averageFrequencies" : 19.370370370370374,
+  "medianIncome" : 5060.0,
+  "tai" : 5.807239059077065
+}, {
+  "areaID" : 316,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.072052,
+  "population" : 1700,
+  "averageFrequencies" : 19.53921568627451,
+  "medianIncome" : 3100.0,
+  "tai" : 7.640781306657565
+}, {
+  "areaID" : 437,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.549399,
+  "population" : 1460,
+  "averageFrequencies" : 36.16296296296297,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 712,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.235386,
+  "population" : 2240,
+  "averageFrequencies" : 18.204301075268823,
+  "medianIncome" : 3990.0,
+  "tai" : 5.347443806461376
+}, {
+  "areaID" : 833,
+  "numberOfStopsInArea" : 28,
+  "shapeArea" : 0.448314,
+  "population" : 4870,
+  "averageFrequencies" : 20.749999999999996,
+  "medianIncome" : 4360.0,
+  "tai" : 5.964243183272547
+}, {
+  "areaID" : 317,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.103613,
+  "population" : 1980,
+  "averageFrequencies" : 18.519607843137255,
+  "medianIncome" : 5000.0,
+  "tai" : 7.021263182688915
+}, {
+  "areaID" : 713,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.156981,
+  "population" : 0,
+  "averageFrequencies" : 19.602150537634405,
+  "medianIncome" : 3990.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 714,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.273355,
+  "population" : 10,
+  "averageFrequencies" : 16.770833333333332,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 715,
+  "numberOfStopsInArea" : 33,
+  "shapeArea" : 0.307259,
+  "population" : 1200,
+  "averageFrequencies" : 18.93939393939394,
+  "medianIncome" : 7420.0,
+  "tai" : 3.3533785799821727
+}, {
+  "areaID" : 321,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.088882,
+  "population" : 1540,
+  "averageFrequencies" : 19.354166666666664,
+  "medianIncome" : 4680.0,
+  "tai" : 6.895007820450368
+}, {
+  "areaID" : 322,
+  "numberOfStopsInArea" : 35,
+  "shapeArea" : 0.05809,
+  "population" : 1570,
+  "averageFrequencies" : 18.419047619047618,
+  "medianIncome" : 3440.0,
+  "tai" : 7.820741145286925
+}, {
+  "areaID" : 323,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.138037,
+  "population" : 3860,
+  "averageFrequencies" : 21.088888888888885,
+  "medianIncome" : 6860.0,
+  "tai" : 8.217721472955365
+}, {
+  "areaID" : 324,
+  "numberOfStopsInArea" : 35,
+  "shapeArea" : 0.125201,
+  "population" : 2180,
+  "averageFrequencies" : 21.0,
+  "medianIncome" : 5500.0,
+  "tai" : 7.09779575674688
+}, {
+  "areaID" : 325,
+  "numberOfStopsInArea" : 48,
+  "shapeArea" : 0.138473,
+  "population" : 3720,
+  "averageFrequencies" : 23.173611111111104,
+  "medianIncome" : 5120.0,
+  "tai" : 8.344649688680109
+}, {
+  "areaID" : 721,
+  "numberOfStopsInArea" : 23,
+  "shapeArea" : 0.285849,
+  "population" : 1030,
+  "averageFrequencies" : 11.144927536231888,
+  "medianIncome" : 9550.0,
+  "tai" : 1.9222167334561275
+}, {
+  "areaID" : 326,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.109502,
+  "population" : 2730,
+  "averageFrequencies" : 20.931372549019603,
+  "medianIncome" : 8630.0,
+  "tai" : 7.931196654837902
+}, {
+  "areaID" : 722,
+  "numberOfStopsInArea" : 21,
+  "shapeArea" : 0.325755,
+  "population" : 0,
+  "averageFrequencies" : 2.952380952380953,
+  "medianIncome" : 5820.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 723,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.199729,
+  "population" : 2370,
+  "averageFrequencies" : 5.652777777777776,
+  "medianIncome" : 5820.0,
+  "tai" : 3.124224390144235
+}, {
+  "areaID" : 724,
+  "numberOfStopsInArea" : 23,
+  "shapeArea" : 0.104467,
+  "population" : 1120,
+  "averageFrequencies" : 6.666666666666666,
+  "medianIncome" : 5820.0,
+  "tai" : 3.2730164395090022
+}, {
+  "areaID" : 725,
+  "numberOfStopsInArea" : 23,
+  "shapeArea" : 0.414567,
+  "population" : 2290,
+  "averageFrequencies" : 13.28985507246377,
+  "medianIncome" : 3370.0,
+  "tai" : 3.3356730292524173
+}, {
+  "areaID" : 331,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.300539,
+  "population" : 910,
+  "averageFrequencies" : 20.527131782945734,
+  "medianIncome" : 3670.0,
+  "tai" : 2.9456410505313526
+}, {
+  "areaID" : 211,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.579176,
+  "population" : 5690,
+  "averageFrequencies" : 11.819444444444445,
+  "medianIncome" : 8040.0,
+  "tai" : 4.410064588947077
+}, {
+  "areaID" : 332,
+  "numberOfStopsInArea" : 27,
+  "shapeArea" : 0.069322,
+  "population" : 910,
+  "averageFrequencies" : 20.296296296296298,
+  "medianIncome" : 3670.0,
+  "tai" : 6.3560564952646
+}, {
+  "areaID" : 212,
+  "numberOfStopsInArea" : 29,
+  "shapeArea" : 0.330083,
+  "population" : 5540,
+  "averageFrequencies" : 11.528735632183908,
+  "medianIncome" : 8350.0,
+  "tai" : 5.60655930366524
+}, {
+  "areaID" : 333,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.064093,
+  "population" : 1420,
+  "averageFrequencies" : 20.990196078431367,
+  "medianIncome" : 5810.0,
+  "tai" : 7.66119805980384
+}, {
+  "areaID" : 213,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.67549,
+  "population" : 3190,
+  "averageFrequencies" : 16.968749999999996,
+  "medianIncome" : 6450.0,
+  "tai" : 3.5410182992540546
+}, {
+  "areaID" : 334,
+  "numberOfStopsInArea" : 34,
+  "shapeArea" : 0.080206,
+  "population" : 2170,
+  "averageFrequencies" : 21.333333333333325,
+  "medianIncome" : 6850.0,
+  "tai" : 8.16736307567038
+}, {
+  "areaID" : 214,
+  "numberOfStopsInArea" : 35,
+  "shapeArea" : 0.353549,
+  "population" : 3010,
+  "averageFrequencies" : 10.628571428571428,
+  "medianIncome" : 11100.0,
+  "tai" : 3.8257248193322697
+}, {
+  "areaID" : 335,
+  "numberOfStopsInArea" : 24,
+  "shapeArea" : 0.154721,
+  "population" : 1590,
+  "averageFrequencies" : 23.180555555555554,
+  "medianIncome" : 5290.0,
+  "tai" : 6.093765839934621
+}, {
+  "areaID" : 731,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.190473,
+  "population" : 2490,
+  "averageFrequencies" : 17.888888888888882,
+  "medianIncome" : 4140.0,
+  "tai" : 6.050483198830757
+}, {
+  "areaID" : 215,
+  "numberOfStopsInArea" : 43,
+  "shapeArea" : 0.553996,
+  "population" : 4630,
+  "averageFrequencies" : 12.728682170542633,
+  "medianIncome" : 5400.0,
+  "tai" : 4.204825299368523
+}, {
+  "areaID" : 336,
+  "numberOfStopsInArea" : 28,
+  "shapeArea" : 0.077075,
+  "population" : 2020,
+  "averageFrequencies" : 21.261904761904763,
+  "medianIncome" : 3680.0,
+  "tai" : 8.08496952606114
+}, {
+  "areaID" : 611,
+  "numberOfStopsInArea" : 74,
+  "shapeArea" : 0.245645,
+  "population" : 2820,
+  "averageFrequencies" : 26.31531531531531,
+  "medianIncome" : 4640.0,
+  "tai" : 6.6504338748168434
+}, {
+  "areaID" : 732,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.230525,
+  "population" : 3300,
+  "averageFrequencies" : 15.296296296296292,
+  "medianIncome" : 9490.0,
+  "tai" : 5.896357515008411
+}, {
+  "areaID" : 216,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.438485,
+  "population" : 2660,
+  "averageFrequencies" : 13.20833333333333,
+  "medianIncome" : 6790.0,
+  "tai" : 3.5407663727305794
+}, {
+  "areaID" : 337,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.086064,
+  "population" : 1750,
+  "averageFrequencies" : 24.249999999999996,
+  "medianIncome" : 4120.0,
+  "tai" : 7.798420149921558
+}, {
+  "areaID" : 612,
+  "numberOfStopsInArea" : 49,
+  "shapeArea" : 0.24452,
+  "population" : 1440,
+  "averageFrequencies" : 31.122448979591834,
+  "medianIncome" : 5270.0,
+  "tai" : 5.47952125875824
+}, {
+  "areaID" : 733,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.237662,
+  "population" : 1350,
+  "averageFrequencies" : 17.777777777777775,
+  "medianIncome" : 15820.0,
+  "tai" : 4.082859343601387
+}, {
+  "areaID" : 613,
+  "numberOfStopsInArea" : 63,
+  "shapeArea" : 0.472736,
+  "population" : 0,
+  "averageFrequencies" : 36.566137566137556,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 734,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.229904,
+  "population" : 3010,
+  "averageFrequencies" : 17.9,
+  "medianIncome" : 4560.0,
+  "tai" : 6.055466801755931
+}, {
+  "areaID" : 735,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.183127,
+  "population" : 2640,
+  "averageFrequencies" : 18.288888888888888,
+  "medianIncome" : 3690.0,
+  "tai" : 6.33151777835692
+}, {
+  "areaID" : 736,
+  "numberOfStopsInArea" : 21,
+  "shapeArea" : 0.264118,
+  "population" : 3650,
+  "averageFrequencies" : 23.000000000000004,
+  "medianIncome" : 5020.0,
+  "tai" : 6.769522196355832
+}, {
+  "areaID" : 341,
+  "numberOfStopsInArea" : 41,
+  "shapeArea" : 0.08424,
+  "population" : 2030,
+  "averageFrequencies" : 24.85365853658536,
+  "medianIncome" : 4750.0,
+  "tai" : 8.253990906126019
+}, {
+  "areaID" : 221,
+  "numberOfStopsInArea" : 14,
+  "shapeArea" : 0.354381,
+  "population" : 0,
+  "averageFrequencies" : 8.523809523809524,
+  "medianIncome" : 10170.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 342,
+  "numberOfStopsInArea" : 36,
+  "shapeArea" : 0.066064,
+  "population" : 2050,
+  "averageFrequencies" : 24.361111111111104,
+  "medianIncome" : 5990.0,
+  "tai" : 8.799544923690252
+}, {
+  "areaID" : 222,
+  "numberOfStopsInArea" : 13,
+  "shapeArea" : 0.288899,
+  "population" : 2590,
+  "averageFrequencies" : 6.769230769230769,
+  "medianIncome" : 10170.0,
+  "tai" : 2.8896614608436155
+}, {
+  "areaID" : 343,
+  "numberOfStopsInArea" : 46,
+  "shapeArea" : 0.093809,
+  "population" : 2050,
+  "averageFrequencies" : 26.210144927536238,
+  "medianIncome" : 2920.0,
+  "tai" : 8.149381797383215
+}, {
+  "areaID" : 223,
+  "numberOfStopsInArea" : 29,
+  "shapeArea" : 0.471093,
+  "population" : 5280,
+  "averageFrequencies" : 9.045977011494251,
+  "medianIncome" : 8020.0,
+  "tai" : 4.09219985133363
+}, {
+  "areaID" : 344,
+  "numberOfStopsInArea" : 31,
+  "shapeArea" : 0.083446,
+  "population" : 1970,
+  "averageFrequencies" : 25.172043010752684,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 224,
+  "numberOfStopsInArea" : 26,
+  "shapeArea" : 0.557891,
+  "population" : 2090,
+  "averageFrequencies" : 5.743589743589744,
+  "medianIncome" : 9870.0,
+  "tai" : 0.4601265867651708
+}, {
+  "areaID" : 345,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 0.125164,
+  "population" : 2210,
+  "averageFrequencies" : 26.266666666666662,
+  "medianIncome" : 8030.0,
+  "tai" : 7.654850924986902
+}, {
+  "areaID" : 741,
+  "numberOfStopsInArea" : 30,
+  "shapeArea" : 0.244605,
+  "population" : 1410,
+  "averageFrequencies" : 22.155555555555562,
+  "medianIncome" : 6670.0,
+  "tai" : 4.633090214156019
+}, {
+  "areaID" : 225,
+  "numberOfStopsInArea" : 20,
+  "shapeArea" : 0.153235,
+  "population" : 3310,
+  "averageFrequencies" : 7.15,
+  "medianIncome" : 2630.0,
+  "tai" : 5.0784094836454585
+}, {
+  "areaID" : 346,
+  "numberOfStopsInArea" : 48,
+  "shapeArea" : 0.097889,
+  "population" : 2500,
+  "averageFrequencies" : 25.41666666666666,
+  "medianIncome" : 7160.0,
+  "tai" : 8.442589913995214
+}, {
+  "areaID" : 621,
+  "numberOfStopsInArea" : 51,
+  "shapeArea" : 0.225109,
+  "population" : 10,
+  "averageFrequencies" : 38.05882352941177,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 742,
+  "numberOfStopsInArea" : 25,
+  "shapeArea" : 0.189547,
+  "population" : 1410,
+  "averageFrequencies" : 13.306666666666667,
+  "medianIncome" : 6670.0,
+  "tai" : 4.036028756363334
+}, {
+  "areaID" : 226,
+  "numberOfStopsInArea" : 27,
+  "shapeArea" : 0.247052,
+  "population" : 3690,
+  "averageFrequencies" : 11.283950617283951,
+  "medianIncome" : 3290.0,
+  "tai" : 5.283012880435395
+}, {
+  "areaID" : 347,
+  "numberOfStopsInArea" : 49,
+  "shapeArea" : 0.128623,
+  "population" : 2840,
+  "averageFrequencies" : 24.489795918367346,
+  "medianIncome" : 7180.0,
+  "tai" : 8.01453424533987
+}, {
+  "areaID" : 622,
+  "numberOfStopsInArea" : 40,
+  "shapeArea" : 0.230554,
+  "population" : 390,
+  "averageFrequencies" : 37.89999999999999,
+  "medianIncome" : 4080.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 743,
+  "numberOfStopsInArea" : 33,
+  "shapeArea" : 0.233991,
+  "population" : 3330,
+  "averageFrequencies" : 18.848484848484844,
+  "medianIncome" : 3100.0,
+  "tai" : 6.371888340673794
+}, {
+  "areaID" : 348,
+  "numberOfStopsInArea" : 40,
+  "shapeArea" : 0.050956,
+  "population" : 1160,
+  "averageFrequencies" : 24.575,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 623,
+  "numberOfStopsInArea" : 32,
+  "shapeArea" : 0.245001,
+  "population" : 390,
+  "averageFrequencies" : 36.42708333333333,
+  "medianIncome" : 4080.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 744,
+  "numberOfStopsInArea" : 45,
+  "shapeArea" : 1.013059,
+  "population" : 4480,
+  "averageFrequencies" : 20.555555555555557,
+  "medianIncome" : 3580.0,
+  "tai" : 3.8364112117680094
+}, {
+  "areaID" : 349,
+  "numberOfStopsInArea" : 37,
+  "shapeArea" : 0.086662,
+  "population" : 1520,
+  "averageFrequencies" : 23.891891891891888,
+  "medianIncome" : 10870.0,
+  "tai" : 7.417178757172668
+}, {
+  "areaID" : 624,
+  "numberOfStopsInArea" : 54,
+  "shapeArea" : 0.246635,
+  "population" : 390,
+  "averageFrequencies" : 29.901234567901238,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 745,
+  "numberOfStopsInArea" : 33,
+  "shapeArea" : 0.43024,
+  "population" : 3500,
+  "averageFrequencies" : 20.242424242424242,
+  "medianIncome" : 3820.0,
+  "tai" : 5.228632398197565
+}, {
+  "areaID" : 625,
+  "numberOfStopsInArea" : 38,
+  "shapeArea" : 0.178844,
+  "population" : 390,
+  "averageFrequencies" : 27.877192982456144,
+  "medianIncome" : 0.0,
+  "tai" : -1.0
+}, {
+  "areaID" : 746,
+  "numberOfStopsInArea" : 26,
+  "shapeArea" : 0.252652,
+  "population" : 3810,
+  "averageFrequencies" : 21.01282051282051,
+  "medianIncome" : 10660.0,
+  "tai" : 6.762313568764293
+}, {
+  "areaID" : 747,
+  "numberOfStopsInArea" : 20,
+  "shapeArea" : 0.136927,
+  "population" : 2850,
+  "averageFrequencies" : 22.61666666666667,
+  "medianIncome" : 3750.0,
+  "tai" : 7.689739430067234
+} ]

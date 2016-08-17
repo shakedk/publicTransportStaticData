@@ -1,0 +1,70 @@
+<!--Version 1-->
+<!--This version includes the following mapping:
+Map is a leaflet map with mapbox tiles.
+Lines are drawn using leaflet API (hence it's styling)
+Station are mapped to d3 changeStations.
+line path is mapped to shape. Each line mapped to differrent color
+Every relevant station (i.e. station where two lines intersect) is mapped to a circle with a text.
+The best station to switch stations at has double mappings:
+1. The better the station (=the shorter time), the bigger the station's icon.
+ The waiting time is mapped to the circle's radius ([Max time - current time]), the bigger the better.
+2. The better the station, the darker is the station's hue.
+The waiting time is mapped to the circle's hue and indicated in a hover tooltip.
+Coloring: the lines and the circle are 3 distinctive colors (red, blue and green). The station's colors received sequntial scaling.
+Next iterations: suggestions:
+- Cancel double mapping: map stations to icons and shortest waiting time to darkest hue.
+- Add a legend for the waiting times
+- Add a tooltip for the line
+- Add origin & destination stations indication
+-->
+<!DOCTYPE html>
+<html>
+<!--import thr leaflet css-->
+<link rel="stylesheet"
+	href="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.css">
+<link rel="stylesheet" type="text/css" href=css/transUccess.css>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/iThing.css" type="text/css" />
+<head>
+
+<!--Script imports-->
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<script src="http://d3js.org/d3.v3.js" type="text/javascript"></script>
+
+<script src="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
+
+<script
+	src="https://syntagmatic.github.io/parallel-coordinates/d3.parcoords.js"></script>
+
+<!-- Scripts for slider -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jQDateRangeSlider-min.js"></script>
+<script src="js/transUccess.min.js"></script>
+
+<title>TransUccess - Tel Aviv</title>
+</head>
+
+<body>	
+	<div id="parallelCoords" class="parcoords">
+		<p>
+			<label for="sltBrushMode" style="display: none">Brush mode:</label> <select
+				id="sltBrushMode" style="display: none">
+			</select> <label id="lblPredicate" for="sltPredicate" style="display: none">Predicate:</label>
+			<select id="sltPredicate" style="display: none">
+				<option>AND</option>
+				<option>OR</option>
+			</select>
+			<button id="btnReset" style="display: none">Reset Brushes</button>
+		</p>
+		<div id="slider" ></div>
+
+	</div>
+	<div id="map"></div>
+</body>
+
+</html>
