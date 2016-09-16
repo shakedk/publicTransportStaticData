@@ -12,30 +12,30 @@ draw_areas_and_lines = function (startHour,endHour){
 	draw_par_coords();
 }
 
-// JQuery Time Slider for hour filtering
-$("#slider").dateRangeSlider({
-	bounds : {
-		min : new Date(2013, 0, 1),
-		max : new Date(2013, 0, 1, 23, 59, 59)
-	},
-	defaultValues : {
-		min : new Date(2013, 0, 1, 6),
-		max : new Date(2013, 0, 1, 9)
-	},
-	formatter : function(value) {
-		var hours = value.getHours(), minutes = value.getMinutes();
-		return TwoDigits(hours) + ":" + TwoDigits(minutes);
-	},
-	step : {
-		minutes : 60
-	}
-}).bind(
-		"valuesChanged",
-		function(e, data) {
-			// Redraw upon filtering
-			draw_areas_and_lines(data.values.min.getHours(), data.values.max
-					.getHours());
-		});
+// // JQuery Time Slider for hour filtering
+// $("#slider").dateRangeSlider({
+// 	bounds : {
+// 		min : new Date(2013, 0, 1),
+// 		max : new Date(2013, 0, 1, 23, 59, 59)
+// 	},
+// 	defaultValues : {
+// 		min : new Date(2013, 0, 1, 6),
+// 		max : new Date(2013, 0, 1, 9)
+// 	},
+// 	formatter : function(value) {
+// 		var hours = value.getHours(), minutes = value.getMinutes();
+// 		return TwoDigits(hours) + ":" + TwoDigits(minutes);
+// 	},
+// 	step : {
+// 		minutes : 60
+// 	}
+// }).bind(
+// 		"valuesChanged",
+// 		function(e, data) {
+// 			// Redraw upon filtering
+// 			draw_areas_and_lines(data.values.min.getHours(), data.values.max
+// 					.getHours());
+// 		});
 
 /**
  * General variables used by the map and the Parallel-Coordinates Chart
@@ -43,14 +43,15 @@ $("#slider").dateRangeSlider({
  */
 
 // change this to the server's IP if you wish for remote access
-var host = "localhost"; // "5.102.230.126"
+var host = "https://shakedk.github.io/";// "localhost"; 
 
 // place holder for the parallel-coordinates draw
 var parcoords = d3.parcoords()("#parallelCoords");
 
 // Data for the parallel-coordinates chart
 var parCoordData;
-
+
+
 // colors used for PC & Map areas/lines
 var colors = ["rgb(129, 16, 237)","rgb(45, 85, 253)","rgb(6, 155, 221)","rgb(0, 192, 191)","rgb(8, 226, 148)","rgb(112, 245, 26)","rgb(196, 187, 0)","rgb(232, 139, 12)","rgb(254, 75, 53)","rgb(238, 17, 128)"];
 	
