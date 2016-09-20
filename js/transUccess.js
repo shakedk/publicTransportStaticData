@@ -10,7 +10,7 @@ draw_areas_and_lines = function (startHour,endHour){
 	endHour = typeof endHour  === 'undefined' ? "09" : endHour;
 	draw_areas_on_map(startHour,endHour);
 	draw_par_coords();
-}
+};
 
 // JQuery Time Slider for hour filtering
 $("#slider").dateRangeSlider({
@@ -100,7 +100,7 @@ draw_areas_on_map = function(startHour,endHour) {
 		return;
 	}
 	// Getting the area new colors and updating it accordingly
-	d3.json('http://' + host + 'areaMaps.json' function(data) {
+	d3.json('http://' + host + 'areaMaps.json', function(data) {
 		if (typeof areasLayer != 'undefined'){
 			// Updating the colors data
 			updateAreaColors(data);
