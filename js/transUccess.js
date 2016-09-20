@@ -100,7 +100,7 @@ draw_areas_on_map = function(startHour,endHour) {
 		return;
 	}
 	// Getting the area new colors and updating it accordingly
-	d3.json('http://' + host + 'areaMaps.json', function(data) {
+	d3.json('http://' + host + '/areaMaps.json', function(data) {
 		if (typeof areasLayer != 'undefined'){
 			// Updating the colors data
 			updateAreaColors(data);
@@ -232,7 +232,7 @@ legend.addTo(map);
  */
 // Generate the PC chart
 draw_par_coords = function() {
-		d3.json('http://' + host + 'areasPC.json',
+		d3.json('http://' + host + '/areasPC.json',
 			function(data) {
 				parCoordData = data;
 	
