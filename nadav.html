@@ -3,7 +3,9 @@
 <body>
 
 <script>
-console.log(url);
+ var url = new URL(location);
+var u = url.searchParams.get("u");
+console.log(u);
 </script>
 
 </body>
