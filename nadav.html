@@ -6,8 +6,7 @@
  var url = new URL(location);
 var u = url.searchParams.get("u");
  var id = u.substring(u.indexOf(".premium"));
-event.preventDefault()
- document.location.href("http://www.haaretz.co.il/misc/iphone-article/" + id);
+window.open("http://www.haaretz.co.il/misc/iphone-article/" + id);
 </script>
 
 </body>
