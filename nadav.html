@@ -4,7 +4,8 @@
 
 <script>
  var url = new URL(location);
- var id = url.substring(url.indexOf(".premium"));
+ urlString = url.toString;
+ var id = urlString.substring(urlString.indexOf(".premium"));
 window.open("http://www.haaretz.co.il/misc/iphone-article/" + id);
 </script>
 
