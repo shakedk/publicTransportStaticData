@@ -7,7 +7,6 @@
  urlString = url.toString();
  var id = urlString.substring(urlString.indexOf(".premium"));
   var site = urlString.substring(urlString.indexOf("https://www."),urlString.indexOf(".co"));
-  console.log("site is: " + site);
 if (site=="https://www.haaretz") {
   window.open("https://www.haaretz.co.il/misc/iphone-article/" + id, "_self", "width=1000");
   } else {
